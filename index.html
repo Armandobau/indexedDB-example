@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<h1>Detectando IndexedDb</h1>
+	<div id="msg"></div>
+
+	<script>
+		var msg = document.getElementById("msg");
+		if (idb.exists()) {
+			msg.innerHTML ="Excelente! Tienes IndexedDb!";
+		}
+		else {
+			msg	.innerHTML ="NO tienes IndexedDb! :(";	
+		}
+	</script>
+</body>
+</html>
